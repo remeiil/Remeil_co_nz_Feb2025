@@ -209,6 +209,74 @@ footer {
         padding: 0.5rem;
     }
 }
+/* Start of Status Page Widget Styles */
+.statusKey {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.statusKey ul{
+    font-size: 0.8rem;
+    list-style: none;
+    padding: 0;
+}
+.trafficLight {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 0.6rem;
+    display: inline-block; 
+}
+.statusList {
+    list-style: none;
+    padding: 1rem 1rem;
+}
+.none {
+    background-color: #2dad45;
+}
+.operational {
+    background-color: #2dad45;
+}
+.minor {
+    background-color: #ffd988;
+}
+.degraded_performance {
+    background-color: #ffd988;
+}
+.major {
+    background-color: #ed7f2b;
+}
+.partial_outage {
+    background-color: #ed7f2b;
+}
+.critical {
+    background-color: #c40000;
+}
+.major_outage {
+    background-color: #c40000;
+}
+.maintenance {
+    background-color: #8ee8fa;
+}
+.statusHoverDefault {
+	position: relative;
+	display: inline-block;			
+}
+.statusHoverDefault li {
+	width:100%;
+    white-space:nowrap;
+}
+.statusHoverDefault .statusHoverActive {
+	visibility: hidden;
+	background-color: var(--dark-background);
+	color: var(--offWhite-text);
+	border-radius: 0.5rem;
+	position: absolute;
+	z-index: 1;
+}
+.statusHoverDefault:hover .statusHoverActive {
+    visibility: visible;
+}
+/* End of Status Page Widget Styles */
 
 @media (min-width: 1024px) {
     body {
